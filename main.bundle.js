@@ -1160,7 +1160,7 @@ var guardedPaths = [
     { path: 'category/:category', loadChildren: Object(__WEBPACK_IMPORTED_MODULE_3__lazy_lazy_module__["a" /* default */])('articlesByParam', 'SharedArticlesModule'), pathMatch: 'full' },
     { path: 'article/:id', loadChildren: Object(__WEBPACK_IMPORTED_MODULE_3__lazy_lazy_module__["a" /* default */])('articleDetails', 'SharedArticleModule'), pathMatch: 'full' },
     { path: 'tag/:tag', loadChildren: Object(__WEBPACK_IMPORTED_MODULE_3__lazy_lazy_module__["a" /* default */])('articlesByParam', 'SharedArticlesModule'), pathMatch: 'full' },
-    { path: 'users', loadChildren: 'app/modules/lazy-loading/users.module#UsersModule', pathMatch: 'full' },
+    { path: 'users', loadChildren: Object(__WEBPACK_IMPORTED_MODULE_3__lazy_lazy_module__["a" /* default */])('users'), pathMatch: 'full' },
     { path: 'user/:username', loadChildren: Object(__WEBPACK_IMPORTED_MODULE_3__lazy_lazy_module__["a" /* default */])('userDetails', ['SharedArticleModule', 'SharedUserModule']), pathMatch: 'full' },
     { path: 'create/article', loadChildren: Object(__WEBPACK_IMPORTED_MODULE_3__lazy_lazy_module__["a" /* default */])('createArticle', 'SharedArticleFormModule'), pathMatch: 'full' },
     { path: 'edit/article/:id', loadChildren: Object(__WEBPACK_IMPORTED_MODULE_3__lazy_lazy_module__["a" /* default */])('editArticle', 'SharedArticleFormModule'), pathMatch: 'full' },
